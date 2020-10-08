@@ -17,13 +17,13 @@ function loadWidget(config) {
 	}
 	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
-	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
-			<div id="waifu-tips"></div>
-			<canvas id="live2d" width="800" height="800"></canvas>
-			<div id="waifu-tool">
+	//document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
+			//<div id="waifu-tips"></div>
+		//	<canvas id="live2d" width="800" height="800"></canvas>
+			//<div id="waifu-tool">
 		
-			</div>
-		</div>`);
+		//	</div>
+		//</div>`);
 	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
 		//<span class="fa fa-lg fa-info-circle"></span>		<span class="fa fa-lg fa-comment"></span>
 				//<span class="fa fa-lg fa-paper-plane"></span>
@@ -163,7 +163,7 @@ function loadWidget(config) {
 			modelTexturesId = localStorage.getItem("modelTexturesId");
 		if (modelId === null) {
 			// 首次访问加载 指定模型 的 指定材质
-			modelId = 1; // 模型 ID
+			modelId = 4; // 模型 ID
 			modelTexturesId = 53; // 材质 ID
 		}
 		loadModel(modelId, modelTexturesId);
